@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <section class="header" style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">         -->
+    <section class="header">        
+        <a href="index.html">
+            <img class="logo" src="images/logo.png">
+        </a>                                 
+        <div class="nav">
+            <div class="menu_item"><a style="color: black;" href="aspaptar.html">Аспаптар</a></div>
+            <div class="menu_item"><a style="color: black;" href="tarih.html">Күйлер тарихы</a></div>
+            <div class="menu_item"><a style="color: black;" href="uirenu.html">Домбыра үйрену</a></div>      
+            <div class="menu_item"><a style="color: black;" href="kulak.html">Құлақ күйін келтіру</a></div>      
+            <div class="menu_item"><a style="color: black;" href="ander.html">Дәстүрлі әндер</a></div>            
+            <div class="menu_item"><a style="color: black;" href="uirenu.html">Сольфеджио</a></div>            
+            <div class="menu_item"><a style="color: black;" href="notalar.html">Ноталар</a></div>            
+            <div class="menu_item"><a style="color: black;" href="biografya.html">Ғұмырнамалар</a></div>            
+            <div class="menu_item"><a style="color: black;" href="user.html">Профиль</a></div>            
+        </div>
+        <a href="menu.html">
+            <div class="header_burger">
+                <span></span>
+            </div>
+        </a>
+    </section>
+
+    <section class="main" style="background-color: #FBF1E7; margin-bottom: 20px;">
+        <div class="heading">
+
+            <h2 style="margin-left: 100px;">Профиль</h2>
+            <form class="form" method="post">
+
+                <div class="form-item">
+                    Логиніңізді енгізіңіз
+                <input type="text" name="login" value="" minlength="5" maxlength="10" required placeholder="Логин" onchange="changeFun()" id="fn">
+                </div>
+        
+                <div class="form-item">
+                    Құпиясөзіңізді енгізіңіз
+                <input type="password" required name="pass" placeholder="Құпиясөз">
+                <!-- pattern=""> -->
+                </div>
+        
+                <div class="form-item">
+                    Жасыңызды енгізіңіз
+                    <input type="number" required min="10" max="50">
+                </div>
+
+                <div class="form-item"> 
+                    Туған күніңізді енгізіңіз                   
+                <input type="date">
+                <!-- <input type="time"> -->
+                </div>                                   
+                                
+                <div class="form-item">
+                    Жынысыңызды көрсетіңіз:
+                <input type="radio" name="gender" value="male">Ер
+                <input type="radio" name="gender" value="female">Әйел
+                </div>
+        
+                <div class="form-item">
+                    <select required name="city">
+                        <option value="">Қалаңызды таңдаңыз</option>
+                        <option value="1">Астана</option>
+                        <option value="2">Қарағанды</option>
+                        <option value="3">Алматы</option>
+                        <option value="4">Шымкент</option>
+                        <option value="5">Түркістан</option>
+                    </select>
+                </div>
+
+                <div style="margin-top: 10px;" class="form-item">
+                    Сурет қосу
+                    <input type="file" >
+                </div>
+
+                <div class="form-item">
+                    <input id="aggree" type="checkbox" required unchecked>
+                    <label for="aggree"><a style="text-decoration: underline;" href="#">Келісім шарттарымен</a> танысып шықтым</label>
+                </div>
+
+                <button style="background-color: #DFD7F9; border-color: hsla(300, 100%, 25%, 1.0);" class="btn btn-warning form-btn">Жөнелту</button>
+            </form>
+        </div>
+
+        <!-- <img class="main_img" src="images/Dombyra.png"> -->
+    </section>
+ 
+    <section class="footer">
+       
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
